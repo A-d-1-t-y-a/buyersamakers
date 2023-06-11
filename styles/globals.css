@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.titleRotationAnimation {
+  background: linear-gradient(
+    45deg,
+    #00ff00,
+    #0000ff,
+    #800080,
+    #7303c0,
+    #fdeff9
+  );
+  background-size: 600% 600%;
+  animation: adityaTitleAnimation 5s linear infinite;
+  -webkit-animation: adityaTitleAnimation 5s linear alternate-reverse infinite;
+}
+
+@keyframes adityaTitleAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rotationAnimation {
+  background: linear-gradient(
+    45deg,
+    #00ff00,
+    #0000ff,
+    #800080,
+    #ffc0cb,
+    #7303c0,
+    #ec38bc,
+    #fdeff9
+  );
+  background-size: 600% 600%;
+  animation: adityaAnimation 7s linear infinite;
+  -webkit-animation: adityaAnimation 7s linear infinite;
+}
+
+@keyframes adityaAnimation {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: -100% 100%;
+  }
+  75% {
+    background-position: -100% -100%;
+  }
+  100% {
+    background-position: 100% -100%;
+  }
+}
